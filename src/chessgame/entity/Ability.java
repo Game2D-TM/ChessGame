@@ -1,0 +1,26 @@
+package chessgame.entity;
+
+public enum Ability {
+    FORWARD_RIGHT,
+    FORWARD_LEFT,
+    BACK_RIGHT,
+    BACK_LEFT,
+    FORWARD,
+    BACK,
+    LEFT,
+    RIGHT,
+    TOP_RIGHT,
+    TOP_LEFT,
+    TOP,
+    BOTTOM,
+    BOTTOM_RIGHT,
+    BOTTOM_LEFT,
+    FORWARD_LUP_RIGHT,
+    FORWARD_LUP_LEFT,
+    FORWARD_LDOWN_RIGHT,
+    FORWARD_LDOWN_LEFT,
+    BACKWARD_LUP_RIGHT,
+    BACKWARD_LUP_LEFT,
+    BACKWARD_LDOWN_RIGHT,
+    BACKWARD_LDOWN_LEFT,
+}
