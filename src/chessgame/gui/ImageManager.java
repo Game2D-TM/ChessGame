@@ -14,12 +14,17 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 
 public class ImageManager {
+
     public Map<String, BufferedImage> images = new HashMap<>();
     private static ImageManager instance;
+
     public static ImageManager getInstance() {
-        if(instance == null) instance = new ImageManager();
+        if (instance == null) {
+            instance = new ImageManager();
+        }
         return instance;
     }
+
     private String DecodingImage(File file, String name, String format) {
         try {
             FileInputStream imgStream = new FileInputStream(file.getAbsolutePath());
@@ -33,6 +38,7 @@ public class ImageManager {
             return null;
         }
     }
+
     private boolean deleteImageFile(String path) {
         try {
             if (path != null) {
@@ -47,14 +53,17 @@ public class ImageManager {
         }
         return false;
     }
+
     public void loadFolderFile(File folder) {
         File[] files = folder.listFiles();
-        if(files != null && files.length > 0) {
-            for(File file : files) {
-                if(!file.getName().contains(".dat")) continue;
+        if (files != null && files.length > 0) {
+            for (File file : files) {
+                if (!file.getName().contains(".dat")) {
+                    continue;
+                }
                 String filename = file.getName().replace(".dat", "");
                 String format = ".png";
-                if(filename.equals("menu-background")) {
+                if (filename.equals("menu-background")) {
                     format = ".jpg";
                 }
                 String imagePath = DecodingImage(file, filename, format);
@@ -63,11 +72,20 @@ public class ImageManager {
             }
         }
     }
-    
+
     private ImageManager() {
-        loadFolderFile(new File("res/images"));
+//        File resFile = null;
+//
+//        URL url = getClass().getProtectionDomain().getCodeSource().getLocation();
+//        String path = url.getPath().substring(1);
+//        resFile = new File(path + "/images");
+//        if (resFile == null) {
+            loadFolderFile(new File("res/images"));
+//        } else {
+//            loadFolderFile(resFile);
+//        }
     }
-    
+
     public BufferedImage loadImage(String imageUrl) {
         try {
             return ImageIO.read(new File(imageUrl));

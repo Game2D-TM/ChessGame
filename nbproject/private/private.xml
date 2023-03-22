@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/entity/Ability.java</file>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/gui/ImageManager.java</file>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/Menu.java</file>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/ChessMenu.java</file>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/gui/ImagePanel.java</file>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/Game.java</file>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/entity/AIPlayer.java</file>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/entity/BoardGamePosition.java</file>
+            <file>file:/D:/Software/Code/Java/ChessGame/src/chessgame/entity/ChessManColor.java</file>
+        </group>
     </open-files>
 </project-private>
