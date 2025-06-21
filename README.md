@@ -60,24 +60,6 @@ The AI simulates basic human decision-making using a priority system:
 
 ---
 
-## 🧩 Challenges & Solutions
-
-### 🟥 Challenge:  
-Creating a responsive and consistent game loop without using any engine.
-
-### 🟩 Solution:  
-Built a custom frame-timed loop with `System.nanoTime()` + `Thread.sleep()` to maintain stable FPS and smooth rendering.
-
----
-
-### 🟥 Challenge:  
-Building a rule-following chess AI without using algorithms like Minimax.
-
-### 🟩 Solution:  
-Designed a rule-based AI that evaluates threats, prioritizes captures, and uses fallback logic for safe movement decisions.
-
----
-
 ## 📦 Tech Stack
 
 - Java 8+
